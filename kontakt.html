@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Kontakt oss">
+    <meta property="og:description" content="Her kan du kontakte oss hvis du har spørsmål">
+    <meta property="og:url" content="https://itstud.hiof.no/~michaeka/obligatoriske/kontakt.html">
+    <meta property="og:image" content="https://itstud.hiof.no/~michaeka/obligatoriske/css/img/bakgrunn.webp">
+    <meta property="og:image:alt" content="bilde av ett designbord med forskjellige ideer">
+    <meta property="og:site_name" content="Kontakt oss">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kontakt oss">
+    <meta name="twitter:description" content="Her kan du kontakte oss hvis du har spørsmål">
+    <meta name="twitter:site" content="@Mikey95">
+    <meta name="twitter:creator" content="@Mikey95">
+    <meta name="twitter:image" content="https://itstud.hiof.no/~michaeka/obligatoriske/css/img/bakgrunn.webp">
+    <meta name="twitter:image:alt" content="bilde av ett designbord med forskjellige ideer">
+    <meta name="description" content="Her kan du kontakte oss hvis du har spørsmål">
+    <link rel="apple-touch-icon" sizes="180x180" href="css/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.2.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.2.1-web/css/brands.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.2.1-web/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preload" as="image" href="css/img/bakgrunn.webp"><!--referanse for preload https://web.dev/preload-responsive-images/ -->
+    <!--fontawesome ble hentet herfra https://fontawesome.com/download -->
+    <title>Kontakt - Webutvikling 2022</title>
+</head>
+<body>
+    <a href="#hovedinnhold" class="snarvei">Hopp til hovedinnholdet</a>         
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="vLIOuuH8">
+    </script> <!--referanse: https://developers.facebook.com/docs/plugins/share-button/ -->
+    <div id="innhold">
+        <a href="#hovedinnhold" class="snarvei">Hopp til hovedinnholdet</a>
+        <header> <!--Ref for hamburger meny undervisning 21.09.22 -->
+        <!--Start på navigasjonsmeny med logo -->
+            <nav id="navbar">
+                <h3><a href="index.html"><img class="logo" src="css/img/logo.webp" alt="link til hjemmeside, tre abstrakte mennesker som holder hverandre i hånden"></a></h3> <!--referanse for selve bilde: https://www.vecteezy.com/vector-art/606979-adoption-and-community-care-logo-template-vector-icon -->
+                <a href="#" title="hamburgermeny" id="ham-icon" onclick="hamMenu()" class="fa-solid fa-bars"></a><!--referanse fra undervisning 21.09.22-->
+                <ul id="main-menu" style="display:none;">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="innhold_cms.html">CMS</a></li>
+                    <li><a href="innhold_uuvsseo.html">UU vs SEO</a></li>
+                    <li><a href="innhold_analyse.html">Analyse</a></li>
+                    <li><a href="kontakt.html">Kontakt oss</a></li>
+                </ul>
+            </nav>  
+            <!--Slutt på navigasjonsmeny-->
+            <!--Bakgrunnsbildet til header-->
+            <div class="image" title="bilde av en gruppe mennesker som designer hvordan en side skal se ut"><h2>Webutvikling 2022</h2></div>Photo by <a href="https://unsplash.com/@uxindo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">UX Indonesia</a> on <a href="https://unsplash.com/s/photos/web%02design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            <a href="https://www.vecteezy.com/free-vector/logo">Logo Vectors by Vecteezy</a>
+            <section id="hovedinnhold" tabindex="-1">
+            </section><!--referanse: https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37#snarvei_for__hoppe_til_hovedinnholdet -->
+        </header>
+        <main>  
+            <!--Start breadcrumbs-->
+            <section id="kontakt">
+                <ul id="breadcrumbs"><!--referanse for breadcrumbs: https://www.w3.org/WAI/WCAG21/Techniques/general/G65.html -->
+                    <li><a href="index.html">Hjem</a></li> 
+                    <li><a href="innhold_cms.html">Cms</a></li>
+                    <li><a href="innhold_uuvsseo.html">UU vsSEO</a></li>
+                    <li><a href="innhold_analyse.html">Analyse</a></li>
+                    <li>kontakt</li>
+                </ul> 
+                <!--slutt breadcrumbs-->
+                <!--start sosiale medier-->
+                <ul class="share_button">
+                    <li><div class="fb-share-button" data-href="https://itstud.hiof.no/~michaeka/obligatoriske/kontakt.html" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Emichaeka%2Fobligatoriske%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                        <!--referanse: https://developers.facebook.com/docs/plugins/share-button/ -->
+                    <li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><!--Referanse: https://publish.twitter.com/?buttonType=TweetButton&widget=Button -->
+                </ul>
+                <a data-pin-do="buttonBookmark" data-pin-tall="true" data-pin-round="true" href="https://www.pinterest.com/pin/create/button/" class="fa-brands fa-pinterest"></a>
+                <!--slutt sosialemedier-->
+                <!--start artikkelkort-->
+                <h1>Kontakt oss!</h1>
+                    <img class="contact" src="css/img/Contact.webp" alt="en fargerik vegg med en plakat som sier accesible entry"><p>Photo by <a href="https://unsplash.com/@untodesign_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Daniel Ali </a> on <a href="https://unsplash.com/s/photos/accesibility?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+            <div class="adresse">
+                <h2>E-post og <img class="telefon" src="css/img/telephone-call.webp" alt="bilde av en svart telefon"> telefon</h2>
+                    <ul>
+                        <li> postmottak@hiof.no </li>
+                        <li> 69 60 80 00</li>
+                    </ul>
+                    <a href="https://www.flaticon.com/free-icons/telephone" title="telephone icons">Telephone icons created by Ilham Fitrotul Hayat - Flaticon</a>
+                <h2><img class="telefon" src="css/img/email.webp" alt="bilde av et brev"> Postadresse</h2> 
+                    <ul>
+                        <li>Høgskolen i Østfold</li>
+                        <li> Postboks 700</li>
+                        <li> 1757 Halden</li>
+                    </ul>
+                    <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Freepik - Flaticon</a>
+                <h2><img class="telefon" src="css/img/box.webp" alt="bilde av en post pakke"> Postpakke adresse</h2>
+                    <ul>
+                        <li>Høgskolen i Østfold</li>
+                        <li>B R A veien 4</li>
+                        <li>1757 Halden</li>
+                    </ul>
+                <!--skjema start-->
+                <form method="post" action="kontakt.html" class="form"> <!--referanse: https://www.w3schools.com/html/html_forms.asp for trykk av send inn knapp: https://stackoverflow.com/questions/25219049/contact-form-wont-submit-shows-file-not-found-error -->
+                    <p>Obligatoriske felter er markert med *</p>
+                    <label for="fname">fornavn:*</label>
+                        <input type="text" name="fname" id="fname" placeholder="fornavn" required autocomplete="given-name">
+                    <label for="Lname">etternavn:*</label>
+                        <input type="text" name="Lname" id="Lname" placeholder="etternavn" required autocomplete="family-name">  
+                    <label for="e-post">E-post:*</label>
+                        <input type="email" name="e-post" id="e-post" placeholder="E-post" required autocomplete="email">
+                    <label for="annen_info">Annen info:*</label>
+                    <textarea name="annen info" cols="35" rows="10" id="annen_info" placeholder="Annen info"></textarea>
+                    <button type="submit" value="submit">send inn</button>
+                </form>
+                <!--skjema slutt-->
+                <!--maps start-->
+                <iframe title="Google maps" class="map" height="250" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=H%C3%B8gskolen%20i%20%C3%98stfold%2C%20B%20R%20A%20Veien%2C%20Halden%2C%20Norway&key=AIzaSyATP7JGmkohUPGzbysT4J7QgAar8f3OWl4"></iframe> 
+                <!--maps slutt-->
+            </div>
+            </section>
+            <!--slutt artikkelkort-->
+        </main>
+        <footer>
+        <a class="contact_footer" href="mailto:Michaeka@hiof.no">Michaeka@hiof.no</a>
+        </footer>
+    </div>
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script><!--ref https://developers.pinterest.com/tools/widget-builder/?type=pinit&buttonType=oneImage&round=true&tall=true -->
+    <script src="javascript/ham.js"></script>
+</body>
+</html>

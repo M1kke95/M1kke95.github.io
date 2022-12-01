@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Webutvikling 2022">
+    <meta property="og:description" content="De forskjellige prinsippene vi bruker i utvikling av websider">
+    <meta property="og:url" content="https://itstud.hiof.no/~michaeka/obligatoriske/index.html">
+    <meta property="og:image" content="https://itstud.hiof.no/~michaeka/obligatoriske/css/img/bakgrunn.webp">
+    <meta property="og:image:alt" content="bilde av ett designbord med forskjellige ideer">
+    <meta property="og:site_name" content="Webutvikling 2022">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Webutvikling 2022">
+    <meta name="twitter:description" content="De forskjellige prinsippene vi bruker i utvikling av websider">
+    <meta name="twitter:site" content="@Mikey95">
+    <meta name="twitter:creator" content="@Mikey95">
+    <meta name="twitter:image" content="https://itstud.hiof.no/~michaeka/obligatoriske/css/img/bakgrunn.wepb">
+    <meta name="twitter:image:alt" content="bilde av ett designbord med forskjellige ideer">
+    <meta name="description" content="De forskjellige prinsippene vi bruker i utvikling av websider">   
+    <link rel="apple-touch-icon" sizes="180x180" href="css/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.2.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.2.1-web/css/brands.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.2.1-web/css/solid.css">
+    <link rel="preload" as="image" href="css/img/bakgrunn.webp"><!--referanse for preload https://web.dev/preload-responsive-images/ -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--fontawesome ble hentet herfra https://fontawesome.com/download -->
+    <title>Hjemmeside - Webutvikling 2022</title>
+</head>
+<body class="index">
+    <div id="frontpage">
+        <a href="#hovedinnhold" class="snarvei">Hopp til hovedinnholdet</a>
+                <section id="hovedinnhold" tabindex="-1">
+                </section><!--referanse: https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37#snarvei_for__hoppe_til_hovedinnholdet -->
+        <header>
+            <!--Start på navigasjonsmeny med logo-->
+            <nav id="navbar">
+                <h3><a href="index.html"><img class="logo" src="css/img/logo.webp" alt=" link til hjemmeside, tre abstrakte mennesker som holder hverandre i hånden"></a></h3> <!--referanse for selve bildet: https://www.vecteezy.com/vector-art/606979-adoption-and-community-care-logo-template-vector-icon -->
+                <a href="#" title="hamburgermeny" id="ham-icon" onclick="hamMenu()" class="fa-solid fa-bars"></a><!--referanse fra undervisning 21.09.22-->
+                <ul id="main-menu" style="display:none;">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="innhold_cms.html">CMS</a></li>
+                    <li><a href="innhold_uuvsseo.html">UU vs SEO</a></li>
+                    <li><a href="innhold_analyse.html">Analyse</a></li>
+                    <li><a href="kontakt.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+            <!--Slutt på navigasjonsmeny-->
+            <!--Bakgrunnsbildet til header-->
+            <div class="image" title="bilde av en gruppe mennesker som designer hvordan en side skal se ut"><h2>Webutvikling 2022</h2></div>Photo by <a href="https://unsplash.com/@uxindo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">UX Indonesia</a> on <a href="https://unsplash.com/s/photos/web%02design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            <a href="https://www.vecteezy.com/free-vector/logo">Logo Vectors by Vecteezy</a>
+        </header>
+        <main>
+            <!--Start introtext-->
+            <section class="intro">
+                <h1> Hva er dette?</h1>
+                    <p class="article-text"> Dette nettstedet ser på forskjellige deler av webutvikling som må tenkes over og er en viktig del av planleggingen av nettsteder.
+                        Her kan du også lese om forskjellige systemer som kan gjøre hverdagen til din bedrift lettere i forhold til utvikling og publisering av nettsider.
+                        Har du lite erfaring med webutvikling, eller kanskje du vil digitalisere papir systemet til bedriften din og mye mer så finnes det ett CMS system for deg. 
+                        Her vil du også finne ut av hvordan du kan optimalisere siden din for å få en god plassering på søkemotorer og hvordan du må forme innholdet ditt
+                        for at alle skal ha lik mulighet til å forbruke innholdet uansett utfordringer. <a href="kontakt.html">kontakt oss</a>
+                    </p>
+            </section>
+            <!--Slutt introtext-->
+            <!--start artikkelkort-->
+            <section>
+                <a href="innhold_cms.html"><img src="css/img/cms_bilde.webp" alt="placeholder"></a>
+                <p>Photo by <a href="https://unsplash.com/@benkolde?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben Kolde</a> on <a href="https://unsplash.com/s/photos/web%design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><!--bilde som ble utgitt med oppgaven--></p>
+                <article class="article-text">
+                <h2>CMS</h2>
+                    <p>Enkelt sagt kan man si at <a href="https://blog.hubspot.com/blog/tabid/6307/bid/7969/what-is-a-cms-and-why-should-you-care.aspx">content management system</a> er en måte å lage, opprettholde og optimalisere en persons digitale opplevelse. Det gjør det også mulig for 
+                        flere redaktører å redigere og publisere innhold, samtidig som at det kan være ett system en enkelt person bruker. Grunner til at man bruker ett CMS system er flere
+                        det er enkelt å vedlikeholde websiden, det er fleksibelt og det er bygget på en database. 
+                    </p>
+                    <a class="read-button" href="innhold_cms.html">Les mer</a>
+                </article>
+            </section>
+            <section>
+                <a href="innhold_uuvsseo.html"><img src="css/img/uuvsseo_bilde.webp" alt="bilde av ett byggekart med verktøy rundt"></a>
+                <p>Photo by <a href="https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isaac Smith</a> on <a href="https://unsplash.com/s/photos/analysis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p><!--bilde som ble utgitt med oppgaven-->
+                <article class="article-text">
+                <h2>UU vs SEO</h2>
+                    <p><a href="https://www.uutilsynet.no/veiledning/kvifor-universell-utforming-av-ikt/240">Universell utforming</a> som konsept er ikke så veldig nytt. Men samtidig er det ikke så gammelt heller. 
+                        De siste årene hvor utviklingen av informasjonstilgang og IT har gått i kjempefart har det også blitt viktigere med universell utforming
+                        i IT verdenen. Dette sørger for at vi alle skal ha mulighet til tilgang til de samme midlene og informasjon. Det har også kommet i fokus
+                        for søkemotorene som vurderer <a href="https://www.searchenginejournal.com/inclusive-web-design-seo/335117/">sidens utforming</a> og informasjon til å finne ut av hvor den skal plassere deg i søkemotorens resultater.
+                    </p>
+                    <a class="read-button" href="innhold_uuvsseo.html">Les mer</a>
+                </article>
+            </section>
+            <section>
+                <div class="article-image"><a href="#"><img src="css/img/analyse_bilde.webp" alt="bilde av en skjerm med analytiske data"></a><!--bilde som ble utgitt med oppgaven -->
+                </div>
+                Photo by <a href="https://unsplash.com/@dawson2406?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stephen Dawson</a> on <a href="https://unsplash.com/s/photos/analysis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                <article>
+                <h2>Analyse</h2>
+                    <p class="article-text">Å analysere en webside man har bygget kan være en god idé, det kan gi deg en pekepinn på hva du mangler og hva som burde vært gjort annerledes.
+                        dette gjør man for å kvalitetssikre websiden sin. Her kan du se hvordan vi har analysert siden vår og hvilke tiltak vi tok for å gi den beste brukeropplevelsen
+                    </p>
+                    <a class="read-button" href="innhold_analyse.html">Les mer</a>
+                </article>
+            </section>
+            <!--Slutt artikkelkort-->
+        </main>
+        <footer>
+            <!--Kontakt oss knapp-->
+            <a class="contact_footer" href="mailto:Michaeka@hiof.no">Michaeka@hiof.no</a>
+        </footer>
+    </div>
+    <script src="javascript/ham.js"></script>
+</body>
+</html>  

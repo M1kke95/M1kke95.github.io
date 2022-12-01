@@ -1,0 +1,1109 @@
+
+
+
+*{
+    box-sizing: border-box;
+    
+}   
+
+
+#frontpage{
+    /* mobile first bestemmer gridområdet til forsiden*/
+    display: grid;
+    grid-template-areas:"header header header"
+                        "main main main"
+                        "footer footer footer";
+    grid-template-columns: 1fr;
+}
+
+#innhold{
+    /* mobile first bestemmer gridområdet til innholdssidene*/
+    display:grid;
+    grid-template-areas:"header header header"
+                        "main main main"
+                        "footer footer footer";
+    grid-template-columns: 1fr;
+    background-color: beige;
+    min-height: calc(100vh - 0px); /*Denne delen av koden funnet på https://stackoverflow.com/questions/34188161/remove-white-space-below-footer øverste svar nummer 3*/
+}
+
+/* gir header beskjed om at den skal holde seg i header delen av grid*/
+header{
+    grid-area: header;
+}
+
+/* navbar referanse https://www.w3schools.com/howto/howto_js_topnav.asp*/
+
+/* gir navbar verier som gjør at den holder seg på høyre side, fargen den skal ha og fontsize.*/
+#navbar{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    color: #f2f2f2;
+    font-size: calc(0.7em + 0.5vw); 
+    padding: 7px 10px;
+    overflow: hidden;
+    background-color:rgb(23, 39, 45);
+}
+#navbar a{
+    color: white;
+}
+/* linker som er trykket på vil være lyseblå på navigasjonselementene*/
+#navbar a:visited{
+    color: gray
+}
+
+/*navigasjons elementer som holde over vil bli antiquewhite og få en annen bakgrunnsfarge*/
+#navbar a:hover{
+    color: antiquewhite;
+    background-color: rgb(31, 58, 67);
+}
+
+/*logoens størrelse og plass blir bestemt*/
+.logo{
+    display: flex;
+    max-width: 50px;
+    max-height: 50px;
+    align-items: baseline;
+    border-radius: 25px;
+}
+
+/*hamburber menyen*/
+#main-menu{
+    gap: 1rem;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    font-size: calc(1em + 1vw);
+    min-width: 100%;
+    margin-right: 10px;
+    top: 67px;
+    z-index: 4;
+    background-color:rgb(23, 39, 45);
+    opacity: 0.98;
+    margin-left: -10px;
+}
+
+/* li elementene mister listepunkene og øker padding*/
+#main-menu li{
+    list-style: none;
+    padding: 1em;
+    border: 1px solid black;
+    margin-left: -40px;
+}
+
+/*hamburger icon*/
+#ham-icon{
+    margin: 24px;
+    text-decoration: none;
+    
+}
+
+.fa-solid{
+    font-size: 25px;
+}
+/* skip to main */
+.snarvei { /* referanse: https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37#snarvei_for__hoppe_til_hovedinnholdet */
+    position: absolute;
+    left: -2000px;
+    top: 0px;
+}
+
+.snarvei:focus {
+    left: 0px;
+    background-color: black;
+    color: white;
+}
+/*skip to main slutt*/
+
+/*sosiale medier share buttons */
+.share_button{
+    display: inline-flex;
+    padding: 0;
+    list-style: none;
+}
+
+.share_button li{
+    margin:5px;
+}
+
+.fb_iframe_widget{
+    bottom:10px;
+}
+
+.kontakt_side.fb_iframe_widget{
+    bottom: 0px;
+}
+/*sosiale medier knapper slutt*/
+
+/* gir header sin overskrift størrelse, plass og farge*/
+header h2{
+    text-align:center;
+    line-height: 10.4rem;
+    font-size: calc(1em + 1vw); 
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+/* bakgrunnsbilde på header, gir posisjon og egenskaper på hvordan den skal oppføre seg*/
+.image{
+    background-image: url(img/bakgrunn.webp);/*href="https://www.vecteezy.com/free-vector/banner">Banner Vectors by Vecteezy</a>*/
+    border: 1px solid black;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    z-index: 3;
+}
+
+.index img{
+    max-width: 80%;
+}
+
+a:hover{
+    background-color: rgb(158, 163, 163);
+    color: white;
+}
+
+.index a{
+    color: darkcyan;
+}
+
+.index footer a{
+    color: white;
+}
+
+.image h2{
+    color: rgb(0, 0, 0);
+}
+
+/*  kontakt knapp i footer*/
+.contact_footer{
+    display: flex;
+    background-color: rgb(23, 39, 45);
+    color: rgb(252, 252, 252);
+    margin-top: 10px;
+
+}
+
+/* hoved området på sidene får beskjed om å holde seg i main delen av grid*/
+main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+/* seksjonene i main og deres articles*/
+main section{
+    min-width: 100%;
+    padding: 1rem;
+    border: 1px solid black; 
+    border-radius: 30px;
+    
+}
+
+
+/* article class referanser: https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html*/
+/* måten artikklene er satt opp på, med bilde på venstre og tekst vedsiden av*/
+
+/* endrer på hvordan bildet er på mobil*/
+.article-image{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    flex-basis: 30%;
+    padding: 25px;
+}
+
+.article-text{ /* måten artikklene er satt opp på, med bilde på venstre og tekst vedsiden av slutt*/
+    align-items: center;
+    width: 100%;
+    font-size: calc(1em + 1vw); 
+    line-height: calc(1.5em + 1.5vw);
+}
+
+#breadcrumbs{
+    list-style: none;
+    display: flex;
+    
+
+}
+/*referanse for breadcrumbs https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_breadcrumbs */
+ul#breadcrumbs{
+    padding: 10px 8px;
+    font-size: calc(0.5em + 1vw);
+    flex-wrap: wrap;
+}
+
+ul#breadcrumbs li+li:before{
+    content: "/\00a0";
+    padding: 5px;
+}
+
+/* les mer linkene når man holder over*/
+.read-button:hover{
+    background-color: gray;
+    color: white;
+}
+
+/*footer sin posisjon og farge*/
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(23, 39, 45);
+    text-align: center;
+    min-height: 6vh;
+    
+}
+
+/*footer text farge*/
+footer p{
+    color: #f2f2f2;
+}
+
+footer a:hover{
+    color: rgb(162, 195, 57);
+    background-color: inherit;
+}
+
+/* gir h1 som kun er i innhold størrelse, og plassering*/
+#innhold h1{
+    text-align:left;
+    line-height: 1rem;
+    font-size: calc(1em + 1vw); 
+    font-weight: bolder;
+}
+h1{
+    font-size: 25px;
+}
+
+/* hoveddelen i innholdssidene*/
+#innhold main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* hoveddelen i innholdsidene og deres sections*/
+#innhold main section{
+    border: 1px solid;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+/*icons på kontakt oss siden*/
+.telefon{ 
+    max-width: 4%;
+    float: left;
+    
+}
+
+/* kontakt oss id'en på kontakt siden, dette er en av artikkelboksene*/
+#kontakt{
+    justify-content: left;
+    margin: auto;
+    max-width: 100%;
+    min-height: 100%;
+    font-size: calc(1em + 1vw);
+}
+
+/*kontakt side bilde*/
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    max-width: 80%;
+    height: 10%;
+    float: none;
+}
+/*kontakt side skjema*/
+.form{
+    border: solid black;
+    width: 300px;
+    max-width: 80%;
+    padding: 1.5% 2% 2%;;
+}
+
+.form label{
+    display: table-cell;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+.form input{
+    max-width: 100%;
+}
+
+.form #annen_info{
+    display: table;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.form input{
+    margin-top: 10px;
+}
+
+.map{
+    width: 100%;
+    padding:10px;
+}
+/* skjema slutt*/
+
+/* bildene på analyse siden*/
+figure{
+    display: inline-grid;
+}
+
+
+figure img{
+    max-width: 100%;
+    padding-top: 15px;
+}
+/* bilde analyse slutt*/
+
+/*Start mobil tabell*/
+#table{
+    display: grid;
+    grid-template-rows: repeat(6,auto);
+    grid-template-columns: repeat(6,auto);
+    min-width: 100%;
+}
+
+.cms-1{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    flex-wrap: wrap;
+   
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+
+
+}
+.cms-2{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+
+}
+.cms-3{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 2;
+}
+.cms-4{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-row-end: 6;
+    grid-column-end: 2;
+}
+.cms-5{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-row-end: 7;
+    grid-column-end: 2;
+}
+.fordeler{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 1;
+    grid-column-end: 3;
+    
+}
+.ulemper{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 1;
+    grid-column-end: 4;
+}
+.likheter{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: 1;
+    grid-column-end: 5;
+}
+.ulikheter{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row-end: 1;
+    grid-column-end: 6;
+}
+
+.nothing-box{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    justify-content: space-evenly;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 1;
+}
+.empty-box1{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+
+
+.empty-box2{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-color: solid black;
+    display: flex;
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+}
+
+
+.empty-box3{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-row-end: 3;
+    grid-column-end: 5;
+}
+
+
+.empty-box4{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+
+.empty-box5{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+}
+
+
+.empty-box6{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 3;
+    grid-column-start: 4;
+    grid-row-end: 3;
+    grid-column-end: 5;
+}
+
+.empty-box7{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 3;
+}
+
+
+.empty-box8{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 4;
+    grid-column-start: 3;
+    grid-row-end: 5;
+    grid-column-end: 4;
+}
+
+.empty-box9{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 4;
+    grid-column-start: 4;
+    grid-row-end: 5;
+    grid-column-end: 5;
+}
+.empty-box10{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 2;
+    grid-column-start: 5;
+    grid-row-end: 3;
+    grid-column-end: 6;
+}
+
+
+.empty-box11{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 3;
+    grid-column-start: 5;
+    grid-row-end: 4;
+    grid-column-end: 6;
+}
+
+
+.empty-box12{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 4;
+    grid-column-start: 5;
+    grid-row-end: 5;
+    grid-column-end: 6;
+}
+
+.empty-box13{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 5;
+    grid-column-start: 2;
+    grid-row-end: 6;
+    grid-column-end: 3;
+}
+
+.empty-box14{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 5;
+    grid-column-start: 3;
+    grid-row-end: 6;
+    grid-column-end: 4;
+}
+
+.empty-box15{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 5;
+    grid-column-start: 4;
+    grid-row-end: 6;
+    grid-column-end: 5;
+}
+
+.empty-box16{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 5;
+    grid-column-start: 5;
+    grid-row-end: 6;
+    grid-column-end: 6;
+}
+
+.empty-box17{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 6;
+    grid-column-start: 2;
+    grid-row-end: 7;
+    grid-column-end: 3;
+}
+
+.empty-box18{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 6;
+    grid-column-start: 3;
+    grid-row-end: 7;
+    grid-column-end: 4;
+}
+
+.empty-box19{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 6;
+    grid-column-start: 4;
+    grid-row-end: 7;
+    grid-column-end: 5;
+}
+
+.empty-box20{
+    background-color: white;
+    border: 1px solid;
+    border-color:solid black;
+    display: flex;
+    grid-row-start: 6;
+    grid-column-start: 5;
+    grid-row-end: 7;
+    grid-column-end: 6;
+}
+
+#table p{
+    width: fit-content;
+    font-size:calc(0.4em + 1vw); 
+} 
+
+/*Slutt mobil tabell */
+
+    /*begynnelse på desktop view*/
+    @media only screen and (min-width:836px) {
+            
+        
+    *{
+        box-sizing: border-box;
+        
+    }   
+        /* hvordan grid frontpage skal se ut på desktop*/
+        #frontpage{
+            display: grid;
+            grid-template-areas: "header header header" 
+                                  "main main main"
+                                   "footer footer footer";
+            grid-template-columns: 2fr  1.5fr 1fr;
+            grid-template-rows: 0.2fr 1fr 0.05fr;
+            
+        }
+        /*hvordan innhold skal se ut på desktop*/
+        #innhold #analyse{
+            display: grid;
+            grid-template-areas: "header header header" 
+                                  "main main main"
+                                   "footer footer footer";
+            grid-template-columns: 1fr  1fr 1fr;
+            grid-template-rows: 0.2fr 3fr 0.05fr;
+        }
+        
+        /*navigasjons meny*/
+        #navbar{
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            color: #f2f2f2;
+            font-size: calc(0.7em + 0.5vw); 
+            padding: 7px 10px;
+            overflow: hidden;
+            background-color:rgb(23, 39, 45);
+            gap: 3rem;
+            
+        }
+
+
+        #navbar a{
+            color: white;
+            
+        }
+
+
+        /* linker som er trykket på vil være lyseblå på navigasjonselementene*/
+        #navbar a:visited{
+            color: gray
+        }
+        
+        /*navigasjons elementer som holde over vil bli antiquewhite og få en annen bakgrunnsfarge*/
+        #navbar a:hover{
+            color: antiquewhite;
+            background-color: rgb(45, 85, 99);
+        }
+
+        #ham-icon{
+            display: none;
+        }
+
+        /* logoens form og størrelse*/
+        .logo{
+            display: flex;
+            max-width: 75px;
+            max-height: 75px;
+            align-items: baseline;
+            border-radius: 32.5px;
+            margin: 10px;
+        }
+
+        /* dette er ul elementet i navigasjonsmenyen*/
+        #main-menu{
+            display: flex !important;
+            flex: wrap;
+            gap: 3.5rem;
+            position: static;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: 10px; 
+            min-width: 25%;
+        }
+        
+        #main-menu li{
+            list-style: none;
+            padding: 0.5em;
+            border: none;
+            margin-left: none;
+            font-size: 18px;
+        }
+        /*navmeny slutt*/
+
+        /*introduksjonstext med utseende og oppførsel*/
+        .intro{
+            flex-basis: auto;
+            flex-grow: 1;
+            width: 100%;
+            height: 300px;
+        }
+        /* facebook share knapp */
+        .fb_iframe_widget{
+            bottom:6px;
+        }
+
+
+        .index img{
+            max-width: 100%;
+        }
+        /*hvordan bilde skal oppføre seg når det er desktop view*/
+        .article-image{
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+            flex-basis: 30%;
+            padding: 25px;
+        }
+
+        /*artikkeltekstens oppførsel of utseende*/
+        .article-text{ 
+            align-items: center;
+            width: 100%;
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        /* hvordan main section skal se ut og oppføre seg*/
+        main section{
+            flex-basis: 1rem ;
+            flex-grow: 1;
+            padding: 1rem;
+            border: 1px solid black; 
+            border-radius: 30px;
+            width: 200px;
+            min-width: 0%;
+        }
+        
+        /* mainsection på innholdssidene*/
+        #innhold main section{
+            min-width: 100%;  
+        }
+
+
+        /* footer sin plassering og farge i desktop*/
+        footer{
+            grid-area: footer;
+            display: flex;
+            background-color:rgb(23, 39, 45);
+            text-align: center;
+            min-height: 12vh;
+            
+        }
+        
+        
+        .contact_footer{
+            margin-top: 37px;
+
+        }
+
+        /* start desktop tabell*/
+        #table{
+            display: grid;
+            grid-template-rows: repeat(6,auto);
+            grid-template-columns: repeat(6,auto);
+            justify-content: center;
+            max-width: 80%;
+            margin-left: 10%;
+            min-width: 0%;
+        }
+
+        #table p{
+            font-size: 18px; 
+            margin: 5px 5px 5px 10px;
+        }
+        .cms-1{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+           
+
+        }
+        .cms-2{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            
+
+        }
+
+        
+        .cms-3{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+           
+        }
+        .cms-4{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+           
+        }
+        .cms-5{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            
+        }
+        .fordeler{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            
+        }
+        .ulemper{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .likheter{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .ulikheter{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .nothing-box{
+            align-items: center;
+            display: flex;
+        }
+
+        .empty-box1{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box2{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        
+        .empty-box3{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        
+        .empty-box4{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box5{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box6{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box7{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box8{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box9{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box10{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box11{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box12{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box13{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box14{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .empty-box15{
+
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+        .empty-box16{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+        .empty-box17{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+        .empty-box18{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+        .empty-box19{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+        .empty-box20{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        } /* slutt desktop tabell */
+
+        #kontakt{
+            justify-content: left;
+            margin: auto;
+            max-width: 65%;
+            min-height: 100%;
+            font-size: 18px;
+        }
+
+        .contact{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 100%;
+            height: 10%;
+            width: auto;
+        }
+        
+        .form{
+            border: solid black;
+            max-width: 50%;
+            width: auto;
+            padding: 1.5% 2% 2%;;
+        }
+
+        .form label{
+            display: table-cell;
+            width: 100%;
+            margin-top: 10px;
+            
+        }
+        .form #annen_info{
+            display: table;
+            resize: both;
+        }
+
+        .map{
+            width: 75%;
+            padding-top: 1rem;
+        }
+        
+
+        
+    }   
+
+    

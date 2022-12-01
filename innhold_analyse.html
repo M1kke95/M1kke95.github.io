@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Analyse">
+    <meta property="og:description" content="Analyse av websiden, hvordan holder den opp mot prinsippene som har blitt diskutert">
+    <meta property="og:url" content="https://itstud.hiof.no/~michaeka/obligatoriske/innhold_analyse.html">
+    <meta property="og:image" content="https://itstud.hiof.no/~michaeka/obligatoriske/css/img/bakgrunn.webp">
+    <meta property="og:image:alt" content="bilde av ett designbord med forskjellige ideer">
+    <meta property="og:site_name" content="Webutvikling 2022">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Webutvikling 2022">
+    <meta name="twitter:description" content="Analyse av websiden, hvordan holder den opp mot prinsippene som har blitt diskutert">
+    <meta name="twitter:site" content="@Mikey95">
+    <meta name="twitter:creator" content="@Mikey95">
+    <meta name="twitter:image" content="https://itstud.hiof.no/~michaeka/obligatoriske/css/img/bakgrunn.webp">
+    <meta name="twitter:image:alt" content="bilde av ett designbord med forskjellige ideer">
+    <meta name="description" content="Analyse av websiden, hvordan holder den opp mot prinsippene som har blitt diskutert">
+    <link rel="apple-touch-icon" sizes="180x180" href="css/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" >
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.2.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.2.1-web/css/brands.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.2.1-web/css/solid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preload" as="image" href="css/img/bakgrunn.webp"><!--referanse for preload https://web.dev/preload-responsive-images/ -->
+    <!--fontawesome ble hentet herfra https://fontawesome.com/download -->
+    <title>Analyse - Webutvikling 2022</title>
+</head>
+<body class="analyse">
+    <a href="#hovedinnhold" class="snarvei">Hopp til hovedinnholdet</a>         
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="YiD59EzM"></script><!--referanse: https://developers.facebook.com/docs/plugins/share-button/ -->
+    <div id="innhold">
+        <header>
+            <!--Start på navigasjonsmeny med logo-->
+            <nav id="navbar">
+                <h3><a href="index.html"><img class="logo" src="css/img/logo.webp" alt="link til hjemmeside,tre abstrakte mennesker som holder hverandre i hånden"></a></h3> <!--referanse for selve bildet: https://www.vecteezy.com/vector-art/606979-adoption-and-community-care-logo-template-vector-icon -->
+                <a href="#" title="hamburgermeny" id="ham-icon" onclick="hamMenu()" class="fa-solid fa-bars"></a><!--referanse fra undervisning 21.09.22-->
+                <ul id="main-menu" style="display:none;">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="innhold_cms.html">CMS</a></li>
+                    <li><a href="innhold_uuvsseo.html">UU vs SEO</a></li>
+                    <li><a href="innhold_analyse.html">Analyse</a></li>
+                    <li><a href="kontakt.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+                <!--Slutt på navigasjonsmeny-->
+            <!--Bakgrunnsbildet til header-->
+            <div class="image" title="bilde av en gruppe mennesker som designer hvordan en side skal se ut"><h2>Webutvikling 2022</h2></div>Photo by <a href="https://unsplash.com/@uxindo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">UX Indonesia</a> on <a href="https://unsplash.com/s/photos/web%02design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            <a href="https://www.vecteezy.com/free-vector/logo">Logo Vectors by Vecteezy</a>
+            <section id="hovedinnhold" tabindex="-1">
+            </section><!--referanse: https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37#snarvei_for__hoppe_til_hovedinnholdet -->
+        </header>
+        <main>
+            <!--start artikkelkort-->
+            <section>
+                <article class="article-text">
+                    <!--start breadcrumbs-->
+                    <ul id="breadcrumbs"><!--referanse for breadcrumbs: https://www.w3.org/WAI/WCAG21/Techniques/general/G65.html -->
+                        <li><a href="index.html">Hjem</a></li> 
+                        <li><a href="innhold_cms.html">Cms</a></li>
+                        <li><a href="innhold_uuvsseo.html">UU vs SEO</a></li>
+                        <li>Analyse</li>
+                    </ul> 
+                    <!--slutt breadcrumbs-->
+                    <h1>Analyse</h1>
+                    <!--start sosialemedier-->
+                        <ul class="share_button">
+                            <li><div class="fb-share-button" data-href="https://itstud.hiof.no/~michaeka/obligatoriske/innhold_analyse.html" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitstud.hiof.no%2F%7Emichaeka%2Fobligatoriske%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                             <!--referanse: https://developers.facebook.com/docs/plugins/share-button/ -->
+                            <li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><!--Referanse: https://publish.twitter.com/?buttonType=TweetButton&widget=Button -->
+                        </ul>
+                        <a data-pin-do="buttonBookmark" data-pin-tall="true" data-pin-round="true" href="https://www.pinterest.com/pin/create/button/" class="fa-brands fa-pinterest"></a>
+                    <!--slutt sosialemedier-->
+                        <p class="article-text">Her skal vi se på analysen av nettsiden. Hvordan siden målte seg opp mot SEO og UU prinsipper som har blitt snakket om. Hovedsakelig de to "programmene" som er brukt til denne delen er:
+                            Google Lighthouse og wave.webaim.org. Når Sidene analyseres vil du se hvordan siden var før endringer også får du se hvilke tiltak som blir gjort for å endre utseende og funksjonaliteten. Det må bli sagt at igjennom analysen til lighthouse så kom det forskjellige
+                            resultater ofte når jeg analayserte flere ganger på rad. Måten analysen i lighthouse har blitt gjort er at logg historikken har blitt helt slettet for hver gang lighthouse analysen har blitt gjort.
+                        </p>
+                        <a href="css/img/tilgjengelighetsærklering.pdf">Tilgjengelighetsærklering</a>
+                    <h2 class="article-text">Hjemmesiden (index)</h2>
+                    <p class="article-text">På denne siden ble både lighthouse og wave.webaim.org brukt. Det var ganske lovende resultater fra starten av.</p>
+                        <figure>
+                        <figcaption>Desktop lighthouse</figcaption>
+                        <img src="css/img/analyse/index/Lighthouse_index.webp" alt="bilde av lighthouse analyse med resultat">
+                        </figure>
+                        <figure>
+                        <figcaption class="article-text">Mobil Lighthouse</figcaption>
+                        <img src="css/img/analyse/index/lighthouse_index_mobile.webp" alt="bilde av lighthouse analyse med resultater for mobil">
+                        </figure>
+                        <figure>
+                        <figcaption class="article-text">wave</figcaption>
+                        <img src="css/img/analyse/index/wave_before_index.webp" alt="bilde av wave resultater">
+                        </figure>
+                    <p class="article-text">Etter å ha sett resultatene så måtte jeg endre på noen kontraster i Nav menyen, 
+                        fargene var for like hverandre. Dette vil gjøre det vansklig for mennesker med en viss type fargeblindhet å lese menyen.
+                    </p>
+                       <figure>
+                       <figcaption class="article-text">Før:</figcaption>
+                        <img src="css/img/analyse/index/index_before_contrast.webp" alt="Bilde av nav meny før kontrast endring">
+                       </figure>
+                        <figure>
+                        <figcaption class="article-text">Etter:</figcaption>
+                        <img src="css/img/analyse/index/index_after_contrast.webp" alt="bilde av nav meny etter kontrast endring">
+                       </figure>
+                    <p class="article-text">font sizen ble også endret på mobilversjon fra å være statisk 18px til å kalkuleres utfra skjermstørrelse med calc(1em + 1vw), 
+                        dette gjør det letter for mobil brukere å lese teksten og jeg endret bildetype fra .jpg til .webp for størrelseforskjellen. Dette er noe som er vansklig å visualisere igjennom bilder, derfor er det ikke bilde av dette.
+                        Siden hadde heller ingen Meta description så dette ble lagt til,
+                        til slutt ble en skip to main tab lagt til</p>
+                        <figure>
+                        <img src="css/img/analyse/skip_to_main.webp" alt="Bilde av skip to main knapp">
+                        </figure>
+                        <h3 class="article-text"> Sluttresultater fra lighthouse og wave.webaim.org</h3>
+                        <figure>
+                        <figcaption>Desktop</figcaption>
+                        <img src="css/img/analyse/index/Lighthouse_index_after.webp" alt="bilde av Index etter endringer med resultater fra lighthouse">
+                        </figure>
+                        <figure>
+                        <figcaption>Mobil</figcaption>
+                        <img src="css/img/analyse/index/lighthouse_index_mobile_after.webp" alt="bilde av mobil index resultater fra lighthouse">
+                        </figure>
+                        <figure>
+                        <img src="css/img/analyse/index/wave_after_index.webp" alt="wave resultater etter endringer">
+                        </figure>
+                    <p class="article-text"> De to Alertene er en reduntant link. Logoen og hjem knappen fører til samme side. Dette har jeg også valgt å la være siden noen vet at man kan trykke på en logo for å komme til hjemmeside imens andre ikke vet dette
+                        og trenger en hjem knapp. Den andre alerten er hamburgermeny som ikke er keyboard accessible, dette kommer til å gå igjen i hele analysen.
+                    </p>
+                    <h2>CMS innholdsside</h2>
+                        <p class="article-text">Som på index siden ble lighthouse og wave.webaim.org brukt resultatene på denne siden var også ganske lovende fra starten av.</p>
+                        <h3 class="article-text">Resultater før endringer: </h3>
+                                <figure>
+                                <figcaption>Desktop: </figcaption>
+                                <img src="css/img/analyse/cms/CMS_before_desktop.webp" alt="Resultatene av cms siden fra lighthouse før endringer">
+                                </figure>
+                                <figure>
+                                <figcaption>Mobil: </figcaption>
+                                <img src="css/img/analyse/cms/cms_lighthouse_mobile_before.webp" alt="Resultatene av cms mobil fra lighthouse">
+                                </figure>
+                                <figure>
+                                <figcaption>Wave resultater:</figcaption>
+                                <img src="css/img/analyse/cms/Wave_cms_before.webp" alt="resultater fra Wave.webaim.org før endring ">
+                                </figure>
+                            <p class="article-text">På denne siden dukket det opp en Error. Denne erroren var en manglende link. Det viste seg at jeg hadde glemt å legge inn ett ord i href. det kom også en redundant link som igjen jeg valgte å la stå siden den hadde blitt brukt på denne artikkeldelen også</p>
+                                <figure>
+                                <figcaption>før:</figcaption>
+                                <img src="css/img/analyse/cms/Error_before_cms.webp" alt="Bilde av CMS error fra wave før endring hvor linken er borte">
+                                </figure>
+                                <figure>
+                                <figcaption>Etter: </figcaption>
+                                <img src="css/img/analyse/cms/error_after_cms.webp" alt="Bilde av CMS error etter endringer hvor man kan se linken">
+                                </figure>
+                            <p>CMS siden hadde også en extra alert som ikke skulle være der. Det er en header level som er hoppet over. Det er også en alert som går på at linkene fører til samme sted. Disse to linkene har blitt brukt til de forskjellige tekstdelene 
+                                så jeg har valgt å beholde den der.
+                            </p>
+                                <figure>
+                                <img src="css/img/analyse/cms/cms_header_alert.webp" alt="ett bilde av header level alert og hvor den er fra wave.webaim.org">
+                                </figure>
+                            <p>Dette ble endret igjennom hele dokumentet hvor det var noe som gikk igjen på de fleste header nivåene</p>
+                            <p>Det viste seg også at det var referanser i en liste. Disse referansene er Href og skal ikke være med i en liste</p>
+                                <figure>
+                                <figcaption>før:</figcaption>
+                                <img src="css/img/analyse/cms/cms_ref_list_before.webp" alt="Bilde av en liste med en link inne i seg">
+                                </figure>
+                                <figure>
+                                <figcaption>Etter:</figcaption>
+                                <img src="css/img//analyse/cms/cms_ref_list_after.webp" alt="bilde av referansen flyttet ut av listen">
+                                </figure>
+                            <p>Etter endringene har blitt gjort ser de forskjellige resultatene slik ut</p>    
+                                <figure>
+                                <figcaption>lighthouse desktop:</figcaption>
+                                <img src="css/img/analyse/cms/CMS_after_desktop.webp" alt="resultatene fra CMS lighthouse etter endringene">
+                                </figure>
+                                <figure>
+                                <figcaption>Lighthouse mobil:</figcaption>
+                                <img src="css/img/analyse/cms/cms_mobil_after.webp" alt="resultatene fra CMS lighthouse mobil etter endringene">
+                                </figure>
+                                <figure>
+                                <figcaption>Wave.webaim.org</figcaption>
+                                <img src="css/img/analyse/cms/wave_cms_etter.webp" alt="resultatene fra wave">
+                                </figure>
+                            <p>På desktop versjon under best practices er de siste poengene i en deprecated API. Denne ligger i facebook share. Løsningen på dette fant jeg ikke, men hvis share knappen ble fjernet ble scoren også høyere.
+                                Det har også dukket opp en ny alert i wave. Iløpet av analysen av CMS så valgte jeg å legge til en hamburger meny. Denne menyen er ikke tilgjengelig med tastaturnavigasjon, vurderingen jeg tok var at denne ble brukt til mobil skjerm
+                                og derfor ikke nødvendig å gjøre noe mer, denne alerten går igjennom resten av analysen.
+                                de tre Alertene på denne siden er da 2 redundant links og en "device dependent event handler"
+                            </p>
+                    <h2>UU vs SEO innholdsside</h2>
+                        <p>På denne siden ble de samme verktøyene brukt. Siden innholdssidene er bygd opp på samme måte vil mange av endringene jeg har gjort på CMS siden også gjelde for denne. </p>
+                            <figure>
+                            <figcaption>Lighthouse desktop:</figcaption>
+                            <img src="css/img/analyse/uuvsseo/uuvs_seo_lighthouse.webp" alt="Resultatene fra lighthouse av seo vs uu">
+                            </figure>
+                            <figure>
+                            <figcaption>Lighthouse Mobil:</figcaption>
+                            <img src="css/img/analyse/uuvsseo/lighthouse_before_uuvsseo_mobile.webp" alt="resultatene fra mobil lighthouse av seo vs uu">
+                            </figure>
+                            <figure>
+                            <figcaption>wave.webaim.org:</figcaption>
+                            <img src="css/img/analyse/uuvsseo/wave_uuvsseo.webp" alt="resultatene fra wave av uuvsseo">
+                            </figure>
+                        <p>Fra hva som kan tydes på bildene er de eneste endringene jeg trenger å gjøre er på mobilversjon. I tabellen har jeg lagt inn to referanser, disse referansene er for nærme hverandre 
+                            med tanke på hvor nærme de er på mobil hvor man bruker en finger til å trykke på linker. Dette kan bli problematisk hvis de er for nærme hverandre og man ender opp med å trykke på feil link
+                        </p>
+                            <figure>
+                            <figcaption>Før:</figcaption>
+                            <img src="css/img/analyse/uuvsseo/ref_tabell_uuvsseo.webp" alt="bilde av referansefeil i tabellen til uu vs seo">
+                            </figure>
+                            <figure>
+                            <figcaption>Etter:</figcaption>
+                            <img src="css/img/analyse/uuvsseo/ref_tabell_uuvsseo_after.webp" alt="bilde av referansefeilen fikset i tabellen til uu vs seo">
+                            </figure>
+                        <p>Det var altså ikke nødvendig å endre noe på desktop versjon, men på mobilversjon ble det gjort endringer og dette ble resultatet etter endringene</p>
+                            <figure>
+                            <img src="css/img/analyse/uuvsseo/lighthouse_mobil_after_uuvsseo.webp" alt="lighthouse resulteter etter endringer på mobil">
+                            </figure>
+                        <p>Lighthouse på både mobil og desktop ga resultater innenfor 78-85 på performance og best practice. Når jeg prøve å se hva jeg kunne gjøre for å forbedre disse viste det seg at det er noen ting jeg ikke har kunnskap til å kunne løse. problemene var: depricated api, browser errors were logged into console, use http2 og reduce unused javascript.
+                            Etter søket på http2 virket det som at det var noe som bare kunne endres på serverne, noe jeg ikke har tilgang til. deprecated api kommer fra facebook, jeg fant heller ingen løsning på dette. På browser error kom det en 404 not found, det var 3 site manifests som ikke ble funnet. Reduce unused javascript kom også fra facebook, siden jeg ikke har tilgang til denne javascripten var det heller ikke noe som kunne gjøres
+                        </p>
+                    <h2>Analyse av kontakt side</h2>
+                        <p>På denne siden ble det oppdaget en god del feil i forhold til de tidligere sidene, dette er hovedsakelig på grunn av ett nytt element som ble lagt inn i html documentet (form)</p>
+                            <figure>
+                            <figcaption>lighthouse desktop:</figcaption>
+                            <img src="css/img/analyse/kontakt/kontakt_lighthouse_desktop_before.webp" alt="bilde av lighthouse resultater fra desktop før endringer">
+                            </figure>
+                            <figure>
+                            <figcaption>wave.webaim.org</figcaption>
+                            <img src="css/img/analyse/kontakt/kontakt_wave.webp" alt="wave resultater før endringer">
+                            </figure>
+                            <figure>
+                            <figcaption>lighthouse mobil:</figcaption>
+                            <img src="css/img/analyse/kontakt/kontakt_mobil.webp" alt="bilde av lighthouse resultater fra mobil før endringer">
+                            </figure>
+                        <p>Det første som skal tas tak i på denne analysen er at iframes ikke har en tittel, iframes i dette tilfellet er google maps.
+                            på mobil versjon var send inn knappen litt for liten, og jeg endret dette ved å legge en margin-top 10px på alle input feltene. Det var også som på CMS siden hvor header nivåene var feil, så dette ble endret også.
+                            Form label var laget men de var ikke linket opp med inputene</p>
+                            <figure>
+                            <img src="css/img/analyse/form_label_orphan.webp" alt="bilde som viser at form label ikke er koblet opp mot noe">
+                            </figure>
+                        <p>dette ble løst ved at jeg linket disse, til slutt var submit knappen en "empty button" her hadde jeg glemt å legge til en verdi.</p>
+                        <p>etter endringene fikk siden disse resultatene:</p>
+                            <figure>
+                            <figcaption>desktop:</figcaption>
+                            <img src="css/img/analyse/kontakt/kontakt_lighthouse_desktop_after.webp" alt="resultatene fra lighthouse etter endringer">
+                            </figure>
+                            <figure>
+                            <figcaption>mobil er uendret:</figcaption>
+                            <img src="css/img/analyse/kontakt/kontakt_mobil.webp" alt="resultatene fra lighthouse mobil">
+                            </figure>
+                            <figure>
+                            <figcaption>wave.webaim.org</figcaption>
+                            <img src="css/img/analyse/kontakt/kontakt_wave_after.webp" alt="wave resultater etter endringer">
+                            </figure>
+                        <p>De samme problemene som dukket opp tidligere er også her. deprecated apis browser errors, http2 og reduce unused javascript</p>
+                    <h2>Analyse av analyse siden</h2>
+                        <p>På analysesiden ble de samme verktøyene brukt. denne ble gjort til slutt etter at alt som skulle være med på siden var gjort ferdig</p>
+                            <figure>
+                            <figcaption>Desktop: </figcaption>
+                            <img src="css/img/analyse/analyse/lighthouse_analyse_desktop.webp" alt="Resultatene av lighthouse fra analyse siden">
+                            </figure>
+                            <figure>
+                            <figcaption>Mobil: </figcaption>
+                            <img src="css/img/analyse/analyse/lighthouse_analyse_mobil.webp" alt="Resultatene av lighthous mobil fra analyse siden">
+                            </figure>
+                            <figure>
+                            <figcaption>Wave resultater:</figcaption>
+                            <img src="css/img/analyse/analyse/wave_analyse.webp" alt="resultater fra Wave.webaim.org fra analyse siden ">
+                            </figure>
+                        <p>På analysesiden var det ingen nye problemer som ikke har gått igjennom hele oppgaven i lighthouse med deprecated api, browser error og reduce javascript. På wave analysen har det blitt lagt til en ny alert. Alerten er en PDF alert. Den oppstår fordi det er en link til En
+                            pdf fil, og om den er lagt opp til universell utforming.
+                        </p>
+                </article>
+            </section>
+            <!--slutt artikkelkort 1-->
+            <!--start artikkelkort 2-->
+            <section>
+            <article class="article-text">
+                <h2>Heuristisk analyse</h2>
+                    <p>En <a href="https://snl.no/heuristikk">heuristisk</a> analyse kan beskrives som en tommelfingelregel. Det er en regel som ikke trenger å ha noen gyldighet men kan fremdeles ha en praktisk verdi
+                        Det kan være noe så simpelt som at man velger å kjøpe en first price mais istedenfor en mais fra Bama fordi man er kjent med produktet fra firstprice. 
+                        det er ikke sikkert dette er det riktige resultatet for den beste maisen med smak, men det gjør valget at valget er raskere enn å måtte vurdere Bama sin mais. Jakob Nielsen har laget en 10 trinns Brukervennlighetsheuristikk for brukergrensesnittdesign
+                        som skal brukes når sidene skal analyseres
+                    </p>
+                    <h3>Synlighet av system status</h3>
+                        <p>En bruker må alltid vite hva som skjer og hvor personen er, ved å vite dette vil han/hun vurdere veien videre. På innholdssidene til dette nettstedet var det tidligere ikke noen brødsmuler 
+                            som lett kunne vise hvor brukeren var. Dette gjorde det vansklig å vite hvilken side man var på. Hadde det ikke vært for overskriftene ville man ikke vist hvor man befant seg. Derfor ble det vurdert at Dette
+                            ville være en god implementasjon
+                        </p>
+                    <h3>Match mellom systemet og den virkelige verden</h3>
+                        <p>Når man designer en webside er man nødt til å sørge for at brukeren forstår hva som blir skrevet. Det kan være at man bruker ord, logo eller begreper som en bruker ikke vil forstå ved mindre bruker er med på utviklingsprosessen.
+                            På innholdssidene våre har det blitt skjekket at det ikke blir brukt ord og begreper som er vansklige å forstå. Ordene som blir sett på som vansklige for en normal bruker uten noen spesielle IT kunskaper har fått ilagt en link som brukeren kan lese mer om temaet på
+                        </p>
+                    <h3>Brukerkontroll og frihet</h3>
+                        <p>Det er lett å gjøre feil, selv på nettsider kan man ønske å gå tilbake hvis man har trykket på noe feil. For brukeropplevelsen er det derfor viktig at de har en nødutgang hvis de har trykket på noe feil. 
+                        På sidene våre har vi lagt til noe som fungerer som en nødutgang, det er mulig å diskutere brødsmulene som en nødutgang. Det gir brukeren mulighet til å se hvor han/hun er og raskt komme tilbake til der de var.
+                        </p>
+                    <h3>konsistens og standard</h3>
+                         <p>En som bruker nettet ofte er vandt til at visse lenker, menyer og logoer holder seg på samme plass uansett hvilken side de er på. Det kan være at en logo skal føre til hjemmesiden eller at det er en mulighet til å kontakte eier på bunn av siden.
+                            på sidene våre har vi sett på ulike nettsider og deres plasseringer av navigasjonsmenyer og kontakt. Vi har da en logo som ligger til venstre, noe som er normalt og meny til høyre i toppen av siden. Vi har også helt på bunn en kontakt mulighet for brukeren.
+                        </p>
+                    <h3>Feilforebygging</h3>
+                        <p>Når feilen først er ute er det viktig at brukeren får en god feilmelding, men det beste er at man designer en såpass nøye at en feil ikke skjer i utgangspunktet eller at man har en bekreftelsesalternativ
+                            på sidene våre har vi ikke en bekreftelsesalternativ. Vi har en feilmelding i skjemaet på kontakt oss siden som sier ifra om du har glemt å fylle ut en av boksene.
+                        </p>
+                    <h3>gjenkjennelse istedenfor å huske</h3>
+                        <p>man ønsker at brukeren skal få en mindre belastning på minnet når brukeren er på siden din, det skal ikke være nødvendig at brukeren husker informasjon fra grensesnittet ditt elementer som kreves for at brukeren skal kunne bruke designet må være lett gjenkjennelig og synelige ved behov.
+                            på sidene våre vil de elementene som trengs for å bruke designet være menyen. Menyen vår ligger på samme plass på alle sidene og er noe av det første en bruker ser på siden.
+                        </p>
+                    <h3>fleksibilitet og effektiv bruk</h3>
+                        <p>Designet skal være imøtekommende for brukeren, om så brukeren er en nybegynner eller om de er en ekspert. Det er viktig at brukeren har mulighet til å personalisere innholdet slik at man kan skreddersy hvordan type innhold de får se. Man må gi brukere en akselerator som for eksempel hurtigtaster og/eller berøringsbevegelser
+                            tilat også at bruker kan tilpasse innholdet slik at de selv kan velge hvordan produktet skal fungere.
+                            på våre sider har vi noen snarveier. Disse snarveiene ligger igjen i navigasjonsmenyen vår. Vi har også breadcrumbs som kan fungere som en snarvei tilbake til der brukeren var. Vi har derimot ikke store muligheter for å personalisere innholdet. Det nærmeste vi kommer er ett responsivt design.
+                        </p>
+                    <h3>Estetisk og minimalistisk design</h3>
+                        <p>Ett grensesnitt må ikke ha informasjon som ikke er relevant eller nødvendig. All informasjon som brukes i grensesnittet konkurrerer med hverandre og reduserer synligheten til sin egen informasjon og de andres. Det betyr ikke at når man er i design prosessen at man skal droppe alt som har med god design å gjøre
+                            men man må sørge for at det blir simpelt nok for brukere slik at de forstår hva som gjør det de ønsker å oppnå. på våre sider har vi valgt å gå for et ganske så flatt design. Vi har ingen animasjoner og lite 3d objekter. Artikkelboksene våre har en boks rundt seg med skygge. Det er kanskje det som er nærmest en 3d modell. 
+                            likevel valgte vi å lage den slik for å få den til å skille seg fra bakgrunnen.
+                        </p>
+                    <h3>Hjelpe brukerene å diagnotisere, gjenkjenne og gjenopprette feil</h3>
+                        <p>Når en feil først skjer er det viktig at det kommer en feilmelding som kan forstås av brukeren, den må ikke bestå av en feilkode men heller en melding. Dette gjør det lettere for brukeren å forstå hva som gikk galt. Det kan også være smart å ha et forslag på hva som kan gjøres av brukeren for å forhindre at dette problemet skal oppstå igjen
+                            Da kan man bruke tradisjonelle feilmeldinger som for eksempel en fet rød tekst.
+                            På våre sider har vi kun en del som har feilmeldinger. Det er skjemaet på kontakt oss siden, med tanke på at dette er det eneste stedet hvor brukeren skal selv legge noe inn kan vi si at det er det mest naturlige stedet for en feilmelding å være. Denne feilmeldingen ber brukeren fylle inn feltet som er feil.
+                        </p>
+                    <h3>Hjelp og dokumentasjon</h3>
+                        <p>Det beste for en bruker er hvis et system ikke trenger noen forklaring men det kan uansett være smart å gi brukeren dokumentasjon på hvordan en oppgave skal utføres. Denne dokumentasjonen må være kort og presis for at brukeren skal ha noen interesse av å lese den. Den må vise hvilke trinn som må gjøres for å oppnå ett mål.
+                            På våre sider har vi ikke noen hjelp og dokumentasjon. Vurderingen vi har tatt er at systemet vårt er enkelt å bruke, hvor det meste skal leses og våre klikkbare objekter er lette å skille fra normal tekst. Feilmeldingen som oppstår på kontakt oss siden sitt skjema gir nok informasjon til at brukeren forstår hva som må gjøres for 
+                            å utføre oppgaven deres.
+                        </p>           
+                <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Referanse for artikkelen: heuristisk analyse</a>
+            </article>    
+            </section>
+            <!--slutt artikkelkort 2-->
+            <!--start artikkelkort 3-->
+            <section class="article-container">
+                <h2>Analysen satt i en tabell</h2>
+                <div id="table">
+                    <div class="cms-1"><p>UU</p></div>
+                    <div class="cms-2"><p>SEO</p></div>
+                    <div class="cms-3"><p>heuristisk analyse</p></div>
+                    <div class="nothing-box"></div>
+                    <div class="empty-box1"><p>index: endret kontrast i nav, font size på mobil calc(1em+1vw) cms: endret header rekkefølge og referanser</p></div>
+                    <div class="empty-box2"><p>index: kontrast feil i nav, liten skrift på mobil, cms: header feil, referanse feil i liste</p></div>
+                    <div class="empty-box3"><p>kontrast forskjellene på nav gjør det lettere å lese, mobil font size gjør at tekst størrelsen endrer seg dynamisk, header rekkefølgen gjør det lettere for skjermleser og referansen blir ikke en del av listen</p></div>
+                    <div class="empty-box4"><p>alle sider: la til meta description, jpg bilder til webp og skip to main knapp</p></div>
+                    <div class="empty-box5"><p>index: ingen meta description, bilder var .jpg ingen skip to main</p></div>
+                    <div class="empty-box6"><p>med meta description får brukere en kort intro om hva siden handler om, bilde forandringene gjør at bilde filene ikke blir for store</p></div>
+                    <div class="empty-box7"><p>legge til brødsmuler, lenker ved tekniske ord, logoen ble lagt til venstre, hamburger meny</p></div>
+                    <div class="empty-box8"><p>ingen brødsmuler, referanser var egne linker, logo til høyre, navigasjon lik på mobil og desktop</p></div>
+                    <div class="empty-box9"><p>brødsmuler for vei hjelp, lenke ved ord, logo standarisert til venstre, hamburger meny lagt til fordi det er lettere å forstå på mobil</p></div>
+                    <div class="fordeler"><p>tiltak</p></div>
+                    <div class="ulemper"><p>før</p></div>
+                    <div class="likheter">etter</div>
+                </div>
+            </section>
+            <!--slutt artikkelkort 3-->
+        </main>
+        <footer>
+            <a class="contact_footer" href="mailto:Michaeka@hiof.no">Michaeka@hiof.no</a>
+        </footer>
+    </div>
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script><!--ref https://developers.pinterest.com/tools/widget-builder/?type=pinit&buttonType=oneImage&round=true&tall=true -->
+    <script src="javascript/ham.js"></script>
+</body>
+</html>
